@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let tasks_memory = [];
     let current_pos = 0;
 
-    // To-do-text day logic
+    // To-do list day title logic
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const today = new Date();
     const dayName = days[today.getDay()];
 
     to_do_text.innerHTML = dayName + "'s To-Do List";
 
-    // The logic is: create a checkbox, let the user input, and save it as a task
+    // Add task logic: create a checkbox, let the user input, and save it as a task
     function add_checkbox() {
         let task1_ul = document.createElement("ul");
         let task1_checkboxes = document.createElement("div");
